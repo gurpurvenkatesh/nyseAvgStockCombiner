@@ -11,6 +11,7 @@ public class AvgStockMapper extends Mapper<LongWritable, Text, CustomTextPair, C
 	private static CustomLongPair mapOutputValue = new CustomLongPair();
 	
 	public void map(LongWritable LineOffset, Text record, Context context) throws IOException, InterruptedException{
+		
 		parser.parse(record.toString());
 		
 		mapOutputKey.setFirst(new Text(parser.getTradeMonth()));
