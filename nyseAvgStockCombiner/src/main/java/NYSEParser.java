@@ -27,9 +27,9 @@ public class NYSEParser {
 	
 	// Method for converting the input format from dd-MM-yyyy to yyyy-MM
 	
-	public String gettradeMonth(){
+	public String getTradeMonth(){
 		
-		SimpleDateFormat originalTradeDateFormat = new SimpleDateFormat("dd-MM-yyyy");
+		SimpleDateFormat originalTradeDateFormat = new SimpleDateFormat("dd-MMM-yy");
 		SimpleDateFormat TargetTradeMonthFormat = new SimpleDateFormat("yyyy-MM");
 		Date originalDate = new Date();
 		
